@@ -280,6 +280,13 @@
 </html>]]></con:originalMessage>
           </con:configuration>
         </con:assertion>
+        <con:assertion type="Simple Contains" id="a4550ddd-8871-41e4-b480-0d68a9baa020" name="Contains">
+          <con:configuration>
+            <token>something</token>
+            <ignoreCase>false</ignoreCase>
+            <useRegEx>false</useRegEx>
+          </con:configuration>
+        </con:assertion>
         <con:credentials>
           <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
           <con:authType>No Authorization</con:authType>
