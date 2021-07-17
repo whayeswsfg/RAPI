@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="1" path="/api/planets/1/" id="184aeab8-6305-4846-b2f9-f94601a2dab7" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="184aeab8-6305-4846-b2f9-f94601a2dab7fileName">1</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="1" id="fde99289-9523-4eb2-958b-40904336754d" method="GET">
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>format</con:name>
+        <con:value>wookiee</con:value>
+        <con:style>QUERY</con:style>
+        <con:default>wookiee</con:default>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json; charset=utf-8</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:element xmlns:ns="https://swapi.dev/api/planets/1/">ns:Response</con:element>
+    </con:representation>
+    <con:request name="Request 1" id="d608b2c0-8d93-4539-a8d0-abb75c05f4d4" mediaType="application/json">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
+      <con:endpoint>https://swapi.dev</con:endpoint>
+      <con:request/>
+      <con:originalUri>https://swapi.dev/api/planets/1/</con:originalUri>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="format" value="wookiee"/>
+      </con:parameters>
+      <con:parameterOrder>
+        <con:entry>format</con:entry>
+      </con:parameterOrder>
+    </con:request>
+  </con:method>
+</con:resource>

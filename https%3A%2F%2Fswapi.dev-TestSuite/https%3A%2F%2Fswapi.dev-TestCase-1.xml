@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="e30b71b3-b63e-4fa4-8ed2-24afd09c2c30" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="https://swapi.dev TestCase 1" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="e30b71b3-b63e-4fa4-8ed2-24afd09c2c30fileName">https%3A%2F%2Fswapi.dev-TestCase-1</con:setting>
+  </con:settings>
+  <con:testStep type="restrequest" name="Request 1" id="b7fd9ce1-d145-4f54-b3bb-73a566494241">
+    <con:settings/>
+    <con:config service="https://swapi.dev" resourcePath="/api/people" methodName="Planets" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="Request 1" id="52efdd8b-5759-4dd3-b80d-614624f871b9" mediaType="application/json">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>https://swapi.dev</con:endpoint>
+        <con:request/>
+        <con:originalUri>https://swapi.dev/api/swapi.dev/api/planets</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="7eaa59a9-80c0-4360-a325-58bd0b44f373" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="Response SLA Assertion" id="423397c7-68d6-4c30-830d-6c9027503e2e" name="Response SLA">
+          <con:configuration>
+            <SLA>200</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="MessageContentAssertion" id="646ed9c9-b7b1-4276-968b-adf41ced1f5a" name="Message Content Assertion">
+          <con:configuration xsi:type="con:MessageContentAssertion">
+            <con:elements>
+              <con:xpath xsi:nil="true"/>
+              <con:element>#text</con:element>
+              <con:type>XmlObject</con:type>
+              <con:operator>exists</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue xsi:nil="true"/>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>//html[1]/head[1]/meta[1]/@content</con:xpath>
+              <con:element>@content</con:element>
+              <con:type/>
+              <con:operator>=</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>HTML Tidy for Java (vers. 26 Sep 2004), see www.w3.org</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>//html[1]/head[1]/meta[1]/@name</con:xpath>
+              <con:element>@name</con:element>
+              <con:type/>
+              <con:operator>=</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>generator</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>//html[1]/head[1]/title[1]</con:xpath>
+              <con:element>title</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>Access Denied</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>//html[1]/body[1]/font[1]/@face</con:xpath>
+              <con:element>@face</con:element>
+              <con:type/>
+              <con:operator>=</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>Helvetica</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>//html[1]/body[1]/font[1]/br[1]</con:xpath>
+              <con:element>br</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue xsi:nil="true"/>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>//html[1]/body[1]/blockquote[1]/table[1]/@width</con:xpath>
+              <con:element>@width</con:element>
+              <con:type/>
+              <con:operator>=</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>80%</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>//html[1]/body[1]/blockquote[1]/table[1]/@cellpadding</con:xpath>
+              <con:element>@cellpadding</con:element>
+              <con:type/>
+              <con:operator>=</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>1</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>//html[1]/body[1]/blockquote[1]/table[1]/@border</con:xpath>
+              <con:element>@border</con:element>
+              <con:type/>
+              <con:operator>=</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>0</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>//html[1]/body[1]/blockquote[1]/table[1]/tr[1]/td[1]/font[1]/@face</con:xpath>
+              <con:element>@face</con:element>
+              <con:type/>
+              <con:operator>=</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>Helvetica</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>//html[1]/body[1]/blockquote[1]/table[1]/tr[1]/td[1]/font[1]/big[1]</con:xpath>
+              <con:element>big</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>Access Denied (authentication_failed)</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>//html[1]/body[1]/blockquote[1]/table[1]/tr[1]/td[1]/font[1]/br[1]</con:xpath>
+              <con:element>br</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue xsi:nil="true"/>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>//html[1]/body[1]/blockquote[1]/table[1]/tr[1]/td[1]/font[1]/br[2]</con:xpath>
+              <con:element>br</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue xsi:nil="true"/>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>//html[1]/body[1]/blockquote[1]/table[1]/tr[2]/td[1]/font[1]</con:xpath>
+              <con:element>font</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>Your credentials could not be authenticated: "Credentials are missing.". You will not be permitted access until your credentials can be verified.</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>//html[1]/body[1]/blockquote[1]/table[1]/tr[2]/td[1]/font[1]/@face</con:xpath>
+              <con:element>@face</con:element>
+              <con:type/>
+              <con:operator>=</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>Helvetica</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>//html[1]/body[1]/blockquote[1]/table[1]/tr[3]/td[1]/font[1]</con:xpath>
+              <con:element>font</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>This is typically caused by an incorrect username and/or password, but could also be caused by network problems.</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>//html[1]/body[1]/blockquote[1]/table[1]/tr[3]/td[1]/font[1]/@face</con:xpath>
+              <con:element>@face</con:element>
+              <con:type/>
+              <con:operator>=</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>Helvetica</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>//html[1]/body[1]/blockquote[1]/table[1]/tr[4]/td[1]/font[1]/@size</con:xpath>
+              <con:element>@size</con:element>
+              <con:type/>
+              <con:operator>=</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>2</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>//html[1]/body[1]/blockquote[1]/table[1]/tr[4]/td[1]/font[1]/@face</con:xpath>
+              <con:element>@face</con:element>
+              <con:type/>
+              <con:operator>=</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>Helvetica</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>//html[1]/body[1]/blockquote[1]/table[1]/tr[4]/td[1]/font[1]/br[1]</con:xpath>
+              <con:element>br</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue xsi:nil="true"/>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath xsi:nil="true"/>
+              <con:element>#text</con:element>
+              <con:type>XmlObject</con:type>
+              <con:operator>=</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue xsi:nil="true"/>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:originalMessage><![CDATA[<html>
+   <head>
+      <meta content="HTML Tidy for Java (vers. 26 Sep 2004), see www.w3.org" name="generator"/>
+      <title>Access Denied</title>
+   </head>
+   <body>
+      <font face="Helvetica">
+         <br/>
+      </font>
+      <blockquote>
+         <table width="80%" cellpadding="1" border="0">
+            <tr>
+               <td>
+                  <font face="Helvetica">
+                     <big>Access Denied (authentication_failed)</big>
+                     <br/>
+                     <br/>
+                  </font>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <font face="Helvetica">Your credentials could not be authenticated: "Credentials are missing.". You will not be permitted access until your credentials can be verified.</font>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <font face="Helvetica">This is typically caused by an incorrect username and/or password, but could also be caused by network problems.</font>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <font size="2" face="Helvetica">
+                     <br/>
+                     For assistance, contact your network support team.
+                  </font>
+               </td>
+            </tr>
+         </table>
+      </blockquote>
+   </body>
+</html>]]></con:originalMessage>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters/>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

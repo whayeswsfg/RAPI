@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="Planets" path="/api/people" id="0c5a2850-8f9f-466a-a09a-0e72c34f6912" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="0c5a2850-8f9f-466a-a09a-0e72c34f6912fileName">Planets</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="Planets" id="7b885c34-7aec-4e03-bef9-c5eabd64792a" method="GET">
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="FAULT">
+      <con:mediaType>text/html; charset=utf-8</con:mediaType>
+      <con:status>407</con:status>
+      <con:params/>
+      <con:element>html</con:element>
+    </con:representation>
+    <con:representation type="FAULT">
+      <con:mediaType>text/html</con:mediaType>
+      <con:status>404</con:status>
+      <con:params/>
+      <con:element>html</con:element>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:element xmlns:plan="https://swapi.dev/api/swapi.dev/api/planets">plan:Response</con:element>
+    </con:representation>
+    <con:request name="Request 1" id="52efdd8b-5759-4dd3-b80d-614624f871b9" mediaType="application/json">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
+      <con:endpoint>https://swapi.dev</con:endpoint>
+      <con:request/>
+      <con:originalUri>https://swapi.dev/api/swapi.dev/api/planets</con:originalUri>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

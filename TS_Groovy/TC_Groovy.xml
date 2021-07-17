@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="64ffbf69-290b-4bdd-879b-98c5b1c1f496" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TC_Groovy" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="64ffbf69-290b-4bdd-879b-98c5b1c1f496fileName">TC_Groovy</con:setting>
+  </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:testStep type="groovy" name="GS_Training" id="e2eb8e97-ac79-4857-8a60-f3492fa235c1">
+    <con:settings/>
+    <con:config>
+      <script>String message = "Hello Wanda"
+log.info  message
+println message</script>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+  <con:breakPoints>
+    <con:testStepId>e2eb8e97-ac79-4857-8a60-f3492fa235c1</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+</con:testCase>

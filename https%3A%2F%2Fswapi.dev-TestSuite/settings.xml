@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testSuite id="ce3b78c1-aa6e-46a5-9f79-c9cdd37ed95d" name="https://swapi.dev TestSuite" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="ce3b78c1-aa6e-46a5-9f79-c9cdd37ed95dfileName">https%3A%2F%2Fswapi.dev-TestSuite</con:setting>
+  </con:settings>
+  <con:runType>SEQUENTIAL</con:runType>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testSuite>
