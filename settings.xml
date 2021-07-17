@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <con:soapui-project id="a9c40a56-a38e-40fc-b9b7-9d9ba3b44e63" created="3.3.2" activeEnvironment="Default environment" name="StarWars" updated="3.8.1" encryptionMode="Not encrypted" resourceRoot="" compositeProjectFormat="1.3" xmlns:con="http://eviware.com/soapui/config">
-  <con:settings/>
+  <con:settings>
+    <con:setting id="a9c40a56-a38e-40fc-b9b7-9d9ba3b44e63fileName">StarWars-readyapi-project</con:setting>
+  </con:settings>
   <con:properties/>
   <con:wssContainer/>
   <con:databaseConnectionContainer/>
